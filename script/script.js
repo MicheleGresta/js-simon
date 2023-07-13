@@ -13,10 +13,9 @@ const countdown = () => {
     const hour = minute * 60;
     const day = hour * 24;
 
-    // dalla rimanenza del tempo (diff) prendo il resto e lo difivo in ore, poi il resto delle ore in minuti e cosi via
+    // dalla rimanenza del tempo (diff) prendo il resto e lo divido in ore, poi il resto delle ore in minuti e cosi via
 
     const textDay = Math.floor(diff / day);
-    console.log(textDay);
     const textHour = Math.floor((diff % day) / hour);
     const textMinute = Math.floor((diff % hour) / minute);
     const textSecond = Math.floor((diff % minute) / second);
